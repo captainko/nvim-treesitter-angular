@@ -1,3 +1,10 @@
+; attribute="{{ expression }}"
+(attribute
+  ((quoted_attribute_value
+    ((attribute_value) @angular))) @_value
+    (#lua-match? @_value "%{%{.+%}%}")
+    (#offset! @angular 0 2 0 -2))
+
 ; [state]="myState$ | async"
 (attribute
   ((attribute_name) @_name
