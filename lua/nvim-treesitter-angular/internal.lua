@@ -8,7 +8,7 @@ function M.init()
     install_info = {
       url = "https://github.com/CaptainKO/tree-sitter-angular",
       files = { "src/parser.c" },
-      branch = "main"
+      branch = "master"
     },
     maintainers = {"@CaptainKO"}
   }
